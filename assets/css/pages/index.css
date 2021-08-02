@@ -14,6 +14,18 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 1400px) {
+  body { padding: 40px; }
+}
+
+@media only screen and (max-width: 900px) {
+  body { padding: 30px; }
+}
+
+@media only screen and (max-width: 600px) {
+  body { padding: 20px; }
+}
+
 /* Main */
 
 main {
@@ -79,9 +91,7 @@ main div.item.verde { background-color: var(--cor-verde); }
 main div.item.azul { background-color: var(--cor-azul); }
 main div.item.rosa { background-color: var(--cor-rosa); }
 
-main div.item * {
-  pointer-events: none;
-}
+main div.item * { pointer-events: none; }
 
 main div.item h2.titulo {
   margin-bottom: 20px;
@@ -92,4 +102,5 @@ main div.item h2.titulo {
 main div.item p.descricao {
   font-size: 1rem;
   font-family: 'roboto_light';
+  line-height: 1.4;
 }
